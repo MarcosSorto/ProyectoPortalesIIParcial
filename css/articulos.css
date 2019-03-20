@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+    height: 100%;        
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+body {
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+.encabezado img {
+height: 8rem;
+width: 100%;
+}
+.barra-navegacion {
+margin-top: 1px;
+text-align:Center;
+padding:  10px;
+background-color: #A5A5AF;
+}
+.barra-navegacion a {
+color: black;
+font-weight: 600;
+display: block;
+margin: 0 5%;
+text-decoration: none;
+}
+.barra-navegacion a:hover {
+color: #ffffff;
+transition: 0.5s ease-in-out;
+}
+@media (min-width: 780px) {
+.barra-navegacion a{
+    display:inline;
+}
+}
+form {
+background-color: var(--gris);
+padding: 2rem;
+border-radius: 10px;
+}
+form legend {
+text-align: center;
+color: var(--primario);
+font-size: 1.2rem;
+margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contenedor-campos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.campo {
+    flex: 0 0 calc(50% - 1rem);
+}
+.contenedor-campos #comentario {
+    margin: 1rem 0;
+}
+}
+.campo {
+display: flex;
+margin-bottom: 1rem;
+align-items: center;
+}
+.campo label {
+flex: 0 0 5.5rem;
+color: var(--blanco);
+}
+.campo input[type="text"],
+.campo input[type="tel"],
+.campo input[type="mail"],
+.campo textarea {
+flex: 10;
+height: 2rem;
+}
+.width100 {
+flex: 0 0 100%;
+}
+.campo textarea {
+height: 7rem;
+/* max-width: 712px; */
+}
+.enviar {
+display: flex;
+justify-content: flex-end;
+}
+footer {
+background-color: #015249;
+max-height: 15%;
+padding: 5% 15%;
+}
+.opciones-footer a{
+margin-right: 5%;
+color: #ffffff;
+text-decoration: none;
+}
