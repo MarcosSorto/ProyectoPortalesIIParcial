@@ -12,13 +12,15 @@
 html {
     box-sizing: border-box;
     /* Tamaño base para la fuente a 10px */
-    font-size: 62.5%;
     max-width: 100%;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
+body {
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
 .encabezado{
     text-align: center;
     background-image: url(../img/medio-ambiente-e1454903239447.jpeg);
