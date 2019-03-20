@@ -38,12 +38,13 @@ img{
     
 }
 
+
 .categorias{
     
     display: grid;
     justify-content: center;
-    grid-template-columns: 3;
-    grid-template-rows: 2;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
     grid-gap: 2rem;
     padding:10px;
     margin-top: 0px;
@@ -67,19 +68,50 @@ img{
     padding:10px 16px;
 }
 .contaminacion{
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
     padding: 10px 7px;
 }
 .conciencia{
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
     padding: 10px 20px;
     background-color: rgba(0, 0, 0, .35);
     
 }
+
+@media (min-width: 768px) {
+    .categorias{
+    
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 3;
+        grid-template-rows: 2;
+        grid-gap: 2rem;
+        padding:10px;
+        margin-top: 0px;
+    }
+    .bosques{
+   
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        padding:10px 16px;
+    }
+    .contaminacion{
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        padding: 10px 7px;
+    }
+    .conciencia{
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, .35);
+        
+    }
+}
 .items {
-    margin-bottom: 150px;
+    margin-bottom: 20px;
 }
 
 .items img {
@@ -87,6 +119,7 @@ img{
     text-align: center;
     margin-top:5px;
     margin-bottom: 1px;
+    width: 100px;
 }
 @media (min-width: 768px) {
     .items img {
@@ -94,9 +127,28 @@ img{
         margin: 0 12px 0 0;
     }
 }
+
 .items p {
     text-align: justify;
     padding: 2em 0 0 0;
+}
+
+
+@media (min-width: 768px) {
+    .boton{
+        background-color:#1A6981;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 5px 40px;
+        margin-top: 1px;
+        display:inline-block;
+        transition: background-color .3s ease-in-out;
+    }
+}
+.boton:hover{
+    background-color:rgb(5, 61, 77);
 }
 
 body p{
