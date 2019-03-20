@@ -12,7 +12,8 @@
 html {
     box-sizing: border-box;
     /* Tamaño base para la fuente a 10px */
-    max-width: 100%;
+    font-size: 62.5%;
+    max-width: 160%;
 }
 *, *:before, *:after {
     box-sizing: inherit;

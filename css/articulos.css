@@ -11,7 +11,7 @@
 }
 html {
     box-sizing: border-box;
-    height: 100%;        
+    max-width: 160%;  
 }
 *, *:before, *:after {
 box-sizing: inherit;
@@ -20,17 +20,23 @@ body {
 font-family: 'Roboto', sans-serif;
 font-family: 'Open Sans', sans-serif;
 }
-.encabezado img {
-height: 8rem;
-width: 100%;
+.encabezado{
+    text-align: center;
+    background-image: url(../img/ImagenEncabezado.jpg);
+    margin-bottom: 1px;
+}
+.encabezado h1{
+    color:var(--blanco);
+    padding: 15px;
 }
 nav{
-    margin-top: 1px;
+    
     text-align:Center;
     padding:  10px;
 }
 
 .menu{
+    margin-top: 1px;
     background-color: var(--verdeClaro);
 }
 .menu a{
