@@ -1,0 +1,144 @@
+:root {
+    --blanco: #ffffff;
+    --verdeClaro:#57BC90;
+    --verdeOscuro:#015249;
+    --azulClaro:#77C9D4;
+    --gris:#A5A5AF;
+    --negro:#000000;
+    --footer:#015249;
+    --ancho:600px;
+}
+html {
+    box-sizing: border-box;
+    /* Tamaño base para la fuente a 10px */
+    font-size: 62.5%;
+    max-width: 160%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.encabezado{
+    text-align: center;
+    background-image: url(../img/atardecer.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    
+}
+.encabezado h1{
+    padding:10px;
+    color:var(--blanco);
+    margin-bottom: 5px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+
+.categorias{
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+    grid-gap: 2rem;
+    padding:10px;
+    margin-top: 0px;
+}
+.categorias{
+    background-image: url(../img/fondo.jpg);
+    max-width: 100% 100%;
+    background-size: 100% 100%;
+    text-align: center;
+   
+}
+.categorias div{
+    margin: 5px 20px;
+    background-color: rgba(77, 76, 75, 0.514);
+}
+.bosques{
+   
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    padding:10px 16px;
+}
+.contaminacion{
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    padding: 10px 7px;
+}
+.conciencia{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, .35);
+    
+}
+
+.contenido{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    padding:5px;
+ 
+}
+body p{
+    text-align: justify;
+
+}
+a{
+    text-decoration: none;
+    color:var(--blanco);
+    font-size: 10px;
+}
+
+
+
+body{
+    justify-content: center;
+    grid-template-columns: 1;
+    grid-template-rows: 8;
+    grid-gap: 1rem;
+    padding:10px;
+
+}
+
+.contenido {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    margin: 0 4%;
+}
+.contenido p {
+    text-align: justify;
+}
+footer{
+    background-color: var(--footer);
+    color:var(--blanco);
+    padding: 10px ;
+}
+
+footer p{
+    text-align: center;
+    padding:10px;
+}
+.opciones-footer{
+    text-align: left;
+    margin-left:10%;
+}
+.opciones-footer a{
+    display:block;
+    text-decoration: none;
+    margin-right: 1%;
+    color: #ffffff;
+}
+.opciones-footer a:hover{
+    color: var(--verdeClaro);
+}
+@media (min-width: 550px) {
+ 
+    .opciones-footer a{
+        display:inline;
+    }
+}
