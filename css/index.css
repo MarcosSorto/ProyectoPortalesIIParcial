@@ -78,6 +78,26 @@ img{
     background-color: rgba(0, 0, 0, .35);
     
 }
+.items {
+    margin-bottom: 150px;
+}
+
+.items img {
+    display: block;
+    text-align: center;
+    margin-top:5px;
+    margin-bottom: 1px;
+}
+@media (min-width: 768px) {
+    .items img {
+        float: left;
+        margin: 0 12px 0 0;
+    }
+}
+.items p {
+    text-align: justify;
+    padding: 2em 0 0 0;
+}
 
 body p{
     text-align: justify;
@@ -91,9 +111,6 @@ a{
 
 body{
     justify-content: center;
-    grid-template-columns: 1;
-    grid-template-rows: 8;
-    grid-gap: 1rem;
     padding:10px;
 }
 
