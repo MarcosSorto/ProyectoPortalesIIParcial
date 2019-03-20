@@ -97,7 +97,7 @@ h1,h2{
 
 .contenidoPrincipal p {
     text-align: justify;
-    font-size: 12px;
+    /* font-size: 12px; */
 }
 .contenidoPrincipal img{
     width: 100px;
