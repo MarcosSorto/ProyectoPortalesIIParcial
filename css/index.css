@@ -18,6 +18,7 @@ html {
     box-sizing: inherit;
 }
 
+
 .encabezado{
     text-align: center;
     background-image: url(../img/atardecer.jpg);
@@ -38,7 +39,7 @@ img{
 }
 
 .categorias{
-
+    
     display: grid;
     justify-content: center;
     grid-template-columns: 3;
@@ -52,11 +53,12 @@ img{
     max-width: 100% 100%;
     background-size: 100% 100%;
     text-align: center;
-   
+ 
 }
 .categorias div{
-    margin: 5px 20px;
-    background-color: rgba(77, 76, 75, 0.514);
+    margin: 35px 20px 20px 2px;
+    background-color: rgba(56, 164, 236, 0.644);
+    border-radius: 10%;
 }
 .bosques{
    
@@ -77,23 +79,15 @@ img{
     
 }
 
-.contenido{
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    padding:5px;
- 
-}
 body p{
     text-align: justify;
-
 }
+
 a{
     text-decoration: none;
-    color:var(--blanco);
+    color:var(--negro);
     font-size: 10px;
 }
-
-
 
 body{
     justify-content: center;
@@ -101,7 +95,6 @@ body{
     grid-template-rows: 8;
     grid-gap: 1rem;
     padding:10px;
-
 }
 
 .contenido {
@@ -113,6 +106,7 @@ body{
 .contenido p {
     text-align: justify;
 }
+
 footer{
     background-color: var(--footer);
     color:var(--blanco);
