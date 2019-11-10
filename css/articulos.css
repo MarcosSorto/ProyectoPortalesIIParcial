@@ -1,141 +1,140 @@
 :root {
-    --blanco: #ffffff;
-    --verdeClaro:#57BC90;
-    --verdeOscuro:#015249;
-    --azulClaro:#77C9D4;
-    --gris:#A5A5AF;
-    --negro:#000000;
-    --footer:#015249;
-    --otroColor:#109B80;
-    --ancho:600px;
+  --blanco: #ffffff;
+  --verdeClaro: #57bc90;
+  --verdeOscuro: #015249;
+  --azulClaro: #77c9d4;
+  --gris: #a5a5af;
+  --negro: #000000;
+  --footer: rgb(17, 179, 79);
+  --otroColor: #109b80;
+  --ancho: 600px;
 }
 html {
-    box-sizing: border-box;
-    max-width: 160%;  
+  box-sizing: border-box;
+  max-width: 160%;
 }
-*, *:before, *:after {
-box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 body {
-font-family: 'Roboto', sans-serif;
-font-family: 'Open Sans', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-.encabezado{
-    text-align: center;
-    background-image: url(../img/ImagenEncabezado.jpg);
-    margin-bottom: 1px;
+.encabezado {
+  text-align: center;
+  background-image: url(../img/medio-ambiente-e1454903239447.jpeg);
+  margin-bottom: 1px;
 }
-.encabezado h1{
-    color:var(--blanco);
-    padding: 15px;
+.encabezado h1 {
+  color: var(--blanco);
+  padding: 15px;
 }
-nav{
-    
-    text-align:Center;
-    padding:  10px;
+nav {
+  text-align: Center;
+  padding: 10px;
 }
 
-.menu{
-    margin-top: 1px;
-    background-color: var(--verdeClaro);
+.menu {
+  margin-top: 1px;
+  background-color: var(--footer);
 }
-.menu a{
-    text-decoration: none;
-    color: var(--blanco);
-    padding: 5px 15px;
-    display:block;
+.menu a {
+  text-decoration: none;
+  color: var(--blanco);
+  padding: 5px 15px;
+  display: block;
 }
 @media (min-width: 550px) {
-    .menu a{
-        display:inline;
-    }
+  .menu a {
+    display: inline;
+  }
 }
-.menu a:hover{
-    color:var(--verdeOscuro)
+.menu a:hover {
+  color: var(--verdeOscuro);
 }
 form {
-margin: 2rem;
-background-color: var(--gris);
-padding: 3rem;
-border-radius: 10px;
-
+  margin: 2rem;
+  background-color: var(--otroColor);
+  padding: 3rem;
+  border-radius: 10px;
 }
 form legend {
-text-align: center;
-color: var(--primario);
-font-size: 1.2rem;
-margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primario);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
-form {
+  form {
     max-width: 800px;
     margin: 2rem auto;
-}
-.contenedor-campos {
+  }
+  .contenedor-campos {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-.campo {
+  }
+  .campo {
     flex: 0 0 calc(50% - 1rem);
-}
-.contenedor-campos #comentario {
+  }
+  .contenedor-campos #comentario {
     margin: 1rem 0;
-}
+  }
 }
 .campo {
-display: flex;
-margin-bottom: 1rem;
-align-items: center;
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
 }
 .campo label {
-flex: 0 0 5.5rem;
-color: var(--blanco);
+  flex: 0 0 5.5rem;
+  color: var(--blanco);
 }
 .campo input[type="text"],
 .campo input[type="tel"],
 .campo input[type="mail"],
 .campo textarea {
-flex: 10;
-height: 2rem;
+  flex: 10;
+  height: 2rem;
 }
 .width100 {
-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 .campo textarea {
-height: 7rem;
-/* max-width: 712px; */
+  height: 7rem;
+  /* max-width: 712px; */
 }
 .enviar {
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
-footer{
-    background-color: var(--footer);
-    color:var(--blanco);
-    padding: 10px ;
+footer {
+  background-color: var(--footer);
+  color: var(--blanco);
+  padding: 10px;
 }
 
-footer p{
-    text-align: center;
-    padding:10px;
+footer p {
+  text-align: center;
+  padding: 10px;
 }
-.opciones-footer{
-    text-align: left;
-    margin-left:10%;
+.opciones-footer {
+  text-align: left;
+  margin-left: 10%;
 }
-.opciones-footer a{
-    display:block;
-    text-decoration: none;
-    margin-right: 1%;
-    color: #ffffff;
+.opciones-footer a {
+  display: block;
+  text-decoration: none;
+  margin-right: 1%;
+  color: #ffffff;
 }
-.opciones-footer a:hover{
-    color: var(--verdeClaro);
+.opciones-footer a:hover {
+  color: var(--verdeClaro);
 }
 @media (min-width: 550px) {
- 
-    .opciones-footer a{
-        display:inline;
-    }
+  .opciones-footer a {
+    display: inline;
+  }
 }
